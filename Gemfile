@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '> 5.0.0'
 
 # #1
 group :production do
@@ -12,6 +12,7 @@ end
 # #2
 group :development do
   gem 'sqlite3'
+  gem 'listen'
 end
 
 # Use SCSS for stylesheets
