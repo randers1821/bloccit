@@ -2,11 +2,9 @@ require 'random_data'
 
 #Create Posts
 50.times do
-
   Post.create!(
-
-  title: RandomData.random_sentence,
-  body: RandomData.random_paragraph
+    title: RandomData.random_sentence,
+    body: RandomData.random_paragraph
   )
 end
 posts = Post.all
