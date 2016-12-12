@@ -37,3 +37,5 @@ gem 'turbolinks'
 gem 'rails-controller-testing'
 
 gem 'bootstrap-sass'
+
+gem 'bcrypt'
