@@ -38,4 +38,18 @@ RSpec.describe User, type: :model do
       end
 
 
+      describe "before_save callbacks" do
+        it "should format names in title case" do
+          #Setup
+            u = User.new(name: "foo bar", email: "foo@example.com", password: "password")
+          #Execute
+            u.save
+
+          #Validate
+            expect(u.name).to eq("Foo Bar")
+        end
+      end
+
+
+
 end
