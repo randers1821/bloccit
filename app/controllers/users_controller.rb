@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def create
 # #9
     @user = User.new
+    params[:user] = JSON.parse(params[:user])
     @user.name = params[:user][:name]
     @user.email = params[:user][:email]
     @user.password = params[:user][:password]
@@ -20,5 +21,8 @@ class UsersController < ApplicationController
       flash.now[:alert] = "There was an error creating your account. Please try again."
       render :new
     end
+  end
+
+  def confirmation
   end
 end

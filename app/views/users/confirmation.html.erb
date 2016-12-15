@@ -1,0 +1,11 @@
+<h1> Sign Up Confirmation</h1>
+
+
+<h2>Are you sure these valus are correct</h2>
+
+
+<h3>Email: <%= params[:user][:email] %> </h3>
+<h3>Name: <%= params[:user][:name] %> </h3>
+<%= button_to "yes", users_path, method: :post, params: { user: params[:user].to_json} %>
+
+<%= link_to "NO", new_user_path %>
