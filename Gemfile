@@ -21,6 +21,7 @@ end
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'shoulda'
+  gem 'factory_girl_rails', '~> 4.0'
 end
 
 # Use SCSS for stylesheets
@@ -40,4 +41,4 @@ gem 'bootstrap-sass'
 
 gem 'bcrypt'
 
-gem 'figaro', '1.0' 
+gem 'figaro', '1.0'
